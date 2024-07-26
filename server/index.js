@@ -12,4 +12,4 @@ app.post("/authenticate", async(req,res) =>{
 
 });
 
-app.listen(3002);
+app.listen(process.env.PORT || 3001, () => console.log("app is available on local host port http://localhost:3001"))
